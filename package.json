@@ -1,0 +1,19 @@
+{
+  "name": "connect-bay-ad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "ldapjs-client": "^0.1.2",
+    "ldapts": "^7.0.12"
+  }
+}

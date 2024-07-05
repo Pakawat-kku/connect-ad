@@ -1,0 +1,183 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<!-- <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!-- <script src="js/renderers.js"></script> -->
+
+<div id="app">
+  <!-- {{ message }} -->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Krungsri User Email Utility</span>
+      <button class="btn" @click="click()" ><i class="fa-solid fa-x"></i></button>
+    </div>
+    <!-- <div class="container-fluid"> -->
+    <!-- </div> -->
+    
+  </nav>
+  <div class="container bg-light border rounded mt-3 p-3">
+    <div class="row gx-2">
+      <div class="col-3">
+        <select class="form-select" aria-label="Default select example">
+          <option value="Bay.ad.co.th">Bay.ad.co.th</option>
+        </select>
+      </div>
+      <div class="col-auto m-0">
+        <button type="button" class="btn btn-warning">Connect</button>
+      </div>
+      <div class="col-auto">
+        <div class="bg-white border h-100 rounded align-text-middle p-1" disabled>
+          <span class="badge bg-secondary">true</span> Offline
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container bg-light rounded border mt-2 p-3">
+    <div class="row">
+      <div class="col-8">
+        <h4>Email Account Change</h4>
+        <p>Choose Account to Update</p>
+      </div>
+      <div class="col">
+        <div class="row">
+          <input type="text" class="form-control col" placeholder="Search : Employee ID" aria-label="search" aria-describedby="button-addon2">
+          <button type="button" class="btn btn-warning col-auto">+ Add</button>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table border" >
+        <thead class="bg-secondary text-white">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Employee ID</th>
+            <th scope="col">Employee Name</th>
+            <th scope="col">Current Email</th>
+            <th scope="col">New Email</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="tdrow">1</td>
+            <td id="tdrow">123456789</td>
+            <td id="tdrow">Markkkkkk</td>
+            <td id="tdrow">pakawhad@metrosystem.co.th</td>
+            <td id="tdrow">pakawhad@metrosystem.co.th</td>
+            <td id="tdrow">
+              <button class="btn btn-light">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td id="tdrow">2</td>
+            <td id="tdrow">Jacob</td>
+            <td id="tdrow">tdornton</td>
+            <td id="tdrow">@fat</td>
+            <td id="tdrow">@mdo</td>
+            <td id="tdrow">
+              <button class="btn btn-light">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td id="tdrow">3</td>
+            <td id="tdrow">Jacob</td>
+            <td id="tdrow">tdornton</td>
+            <td id="tdrow">@fat</td>
+            <td id="tdrow">@mdo</td>
+            <td id="tdrow">
+              <button class="btn btn-light">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td id="tdrow">4</td>
+            <td id="tdrow">Jacob</td>
+            <td id="tdrow">tdornton</td>
+            <td id="tdrow">@fat</td>
+            <td id="tdrow">@mdo</td>
+            <td id="tdrow">
+              <button class="btn btn-light">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td id="tdrow">5</td>
+            <td id="tdrow">Jacob</td>
+            <td id="tdrow">tdornton</td>
+            <td id="tdrow">@fat</td>
+            <td id="tdrow">@mdo</td>
+            <td id="tdrow">
+              <button class="btn btn-light">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination px-3">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <button @click="click()">
+    ปิด
+  </button>
+</div>
+
+
+<script>
+  const { createApp, ref } = Vue;
+  const { ipcRenderer } = require("electron");
+  const ipc  = ipcRenderer
+
+  createApp({
+
+    setup() {
+    const message = ref('Hello vue!')
+
+     function click() {
+        console.log(ipc);
+        console.log('tttt');
+        ipc.send('CloseTheApp')
+      }
+
+      return {
+        message,
+        click
+      }
+
+    }
+  }).mount('#app')
+
+
+</script>
